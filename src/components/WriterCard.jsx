@@ -18,11 +18,11 @@ const workflowItems = [
 
 const WriterCard = () => {
   return (
-    <div className="flex flex-col gap-10 justify-center items-center p-6 bg-gray-50">
+    <div className="flex flex-col gap-4 md:gap-10 justify-center items-center p-3 md:p-6 bg-gray-50">
       
-      <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-        <div className="bg-white shadow-lg rounded-xl p-6 w-full md:w-[550px]">
-          <div className="bg-gray-100 p-6 rounded-lg relative text-center">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-stretch">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px] flex flex-col">
+          <div className="bg-gray-100 p-4 md:p-6 rounded-lg relative text-center flex-1">
             <h3 className="text-lg font-semibold text-pink-600">
               AI Powered Article Writer
             </h3>
@@ -49,8 +49,8 @@ const WriterCard = () => {
         </div>
 
         
-        <div className="bg-white shadow-lg rounded-xl p-6 w-full  md:w-[550px]">
-          <div className="p-6">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px] flex flex-col">
+          <div className="p-4">
             <img
               src="https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/6745de37ccf1d25957cdee6e_Frame%201244832744.png"
               alt="Integration"
@@ -68,10 +68,10 @@ const WriterCard = () => {
       </div>
 
       
-      <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
        
-        <div className="bg-white shadow-lg rounded-xl p-6 w-full md:w-[550px]">
-          <div className="bg-gray-100 p-6 rounded-lg text-center">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px]">
+          <div className="bg-gray-100 p-4 rounded-lg text-center">
             <div className="grid grid-cols-3 gap-4">
               {workflowItems.map((item, index) => (
                 <div
@@ -96,25 +96,25 @@ const WriterCard = () => {
         </div>
 
       
-        <div className="bg-white shadow-lg rounded-xl p-6 w-full md:w-[550px]">
-          <div className="p-6">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px]">
+          <div className="p-2 md:p-4">
             <h4 className="text-pink-600 text-sm font-bold uppercase">Brand Consistency</h4>
             <p className="text-gray-600 text-sm mt-2">
-              Customizable Brand Voice and Style. Ensure all content aligns perfectly with your brand’s unique tone and messaging.
+              Customizable Brand Voice and Style. Ensure all content aligns perfectly with your brand's unique tone and messaging.
             </p>
-            <div className="mt-4">
-              <h5 className="text-sm font-medium">Select Your Brand Voice</h5>
-              <div className="flex gap-2 mt-2">
-                <button className="bg-blue-600 text-white px-4 py-1 rounded-md">Professional</button>
-                <button className="bg-gray-200 text-gray-800 px-4 py-1 rounded-md">Conversational</button>
-                <button className="bg-gray-200 text-gray-800 px-4 py-1 rounded-md">Casual</button>
+            <div className="mt-3">
+              <h5 className="text-sm font-medium mb-2">Select Your Brand Voice</h5>
+              <div className="flex flex-wrap gap-2">
+                <button className="bg-blue-600 text-white px-3 py-1 rounded text-sm">Professional</button>
+                <button className="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">Conversational</button>
+                <button className="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">Casual</button>
               </div>
-              <div className="mt-4 bg-gray-100 p-3 rounded-md text-gray-700 text-sm">
+              <div className="mt-3 bg-gray-100 p-3 rounded text-gray-700 text-sm">
                 We offer innovative solutions to meet your business needs.
               </div>
             </div>
           </div>
-          <div className="p-4">
+          <div className="p-2 md:p-4">
             <h4 className="text-blue-600 text-sm font-bold uppercase">BRAND CONSISTENCY</h4>
             <h2 className="text-xl font-semibold mt-1">
               Your Brand Voice, perfectly cloned
