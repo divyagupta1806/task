@@ -68,10 +68,10 @@ const WriterCard = () => {
       </div>
 
       
-      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-stretch">
        
-        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px]">
-          <div className="bg-gray-100 p-4 rounded-lg text-center">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px] flex flex-col justify-between">
+          <div className="bg-gray-100 p-4 rounded-lg text-center flex-1">
             <div className="grid grid-cols-3 gap-4">
               {workflowItems.map((item, index) => (
                 <div
@@ -96,7 +96,7 @@ const WriterCard = () => {
         </div>
 
       
-        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px]">
+        <div className="bg-white shadow-lg rounded-xl p-4 md:p-6 w-[320px] md:w-[550px] flex flex-col justify-between">
           <div className="p-2 md:p-4">
             <h4 className="text-pink-600 text-sm font-bold uppercase">Brand Consistency</h4>
             <p className="text-gray-600 text-sm mt-2">
@@ -105,9 +105,9 @@ const WriterCard = () => {
             <div className="mt-3">
               <h5 className="text-sm font-medium mb-2">Select Your Brand Voice</h5>
               <div className="flex flex-wrap gap-2">
-                <button className="bg-blue-600 text-white px-3 py-1 rounded text-sm">Professional</button>
-                <button className="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">Conversational</button>
-                <button className="bg-gray-200 text-gray-800 px-3 py-1 rounded text-sm">Casual</button>
+                <button className="bg-gray-200 hover:bg-blue-600 text-gray-800 hover:text-white px-3 py-1 rounded text-sm">Professional</button>
+                <button className="bg-gray-200 hover:bg-blue-600 text-gray-800 hover:text-white px-3 py-1 rounded text-sm">Conversational</button>
+                <button className="bg-gray-200 hover:bg-blue-600 text-gray-800 hover:text-white px-3 py-1 rounded text-sm">Casual</button>
               </div>
               <div className="mt-3 bg-gray-100 p-3 rounded text-gray-700 text-sm">
                 We offer innovative solutions to meet your business needs.

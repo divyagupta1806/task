@@ -64,7 +64,7 @@ const Hero = () => {
               <span 
                 className="bg-clip-text text-transparent ml-8"
                 style={{ 
-                  backgroundImage: 'linear-gradient(to right, #0090f7, #2563EB)', 
+                  backgroundImage: 'linear-gradient(90deg, #0090f7, #ae65fb 25%, #e14fcf 50%, #ef4283 75%, #f4520b)', 
                   WebkitBackgroundClip: 'text',
                   backgroundClip: 'text',
                 }}
