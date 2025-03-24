@@ -74,7 +74,7 @@ const PublishSection = () => {
               }}
             />
             
-            <div className="post-card absolute left-[-50px] top-[50%] transform -translate-y-1/2 w-[400px] bg-white" style={{
+            <div className="post-card absolute md:left-[-50px] left-0 top-[50%] transform -translate-y-1/2 w-[400px] md:w-[400px] w-[280px] bg-white" style={{
               border: "1px solid rgba(0, 0, 0, 0.08)",
               borderRadius: "16px",
               position: "absolute",
@@ -89,7 +89,7 @@ const PublishSection = () => {
               />
             </div>
 
-            <div className="card absolute right-[-30px] top-[30%] w-[400px] bg-white" style={{ 
+            <div className="card absolute md:right-[-30px] right-0 top-[30%] w-[400px] md:w-[400px] w-[280px] bg-white" style={{ 
               border: "1px solid rgba(0, 0, 0, 0.08)",
               borderRadius: "16px",
               overflow: "hidden",

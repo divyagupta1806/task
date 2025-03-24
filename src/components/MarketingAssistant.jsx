@@ -53,7 +53,7 @@ const MarketingAssistant = () => {
       </div>
 
   
-      <div className="flex justify-end items-center gap-4 mb-5">
+      <div className="hidden md:flex justify-end items-center gap-4 mb-5">
         <button
           onClick={handlePrev}
           className="w-10 h-10 flex justify-center items-center bg-gray-200 rounded-full hover:bg-gray-400 hover:text-white transition duration-200"
@@ -69,7 +69,7 @@ const MarketingAssistant = () => {
       </div>
 
       
-      <div className="flex justify-between">
+      <div className="hidden md:flex justify-between">
         {boxes.slice(visibleIndex, visibleIndex + 2).map((box, index) => (
           <div key={index} className="w-1/2 bg-white border border-gray-100 rounded-lg p-6 shadow-sm">
             <img src={box.img} alt={box.title} className="w-[70%] mx-auto rounded-lg mb-4" />
@@ -77,6 +77,14 @@ const MarketingAssistant = () => {
             <p className="text-gray-700 text-left mt-2">{box.description}</p>
           </div>
         ))}
+      </div>
+
+      <div className="md:hidden">
+        <div className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm">
+          <img src={boxes[0].img} alt={boxes[0].title} className="w-[70%] mx-auto rounded-lg mb-4" />
+          <h2 className="text-black text-[17px] font-semibold text-left">{boxes[0].title}</h2>
+          <p className="text-gray-700 text-left mt-2">{boxes[0].description}</p>
+        </div>
       </div>
     </div>
   );
