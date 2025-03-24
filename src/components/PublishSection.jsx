@@ -49,17 +49,29 @@ const PublishSection = () => {
         
         <div className="text-center mb-24">
           <h2 className="mb-16">
-            <div className="text-[46px] font-bold text-[#E96D44] leading-none mb-0">
+            <div className="text-[32px] md:text-[46px] font-bold text-[#E96D44] leading-none mb-0">
               Publish Everywhere
             </div>
-            <div className="text-[46px] font-bold text-[#1D1D1F] leading-[1.1]">
-              With Your AI Marketing<br/>Agent
+            <div className="text-[32px] md:text-[46px] font-bold text-[#1D1D1F] leading-[1.1]">
+              <span className="block md:hidden whitespace-nowrap">
+                With Your AI Marketing
+                <br />
+                Agent
+              </span>
+              <span className="hidden md:inline">
+                With Your AI Marketing<br/>Agent
+              </span>
             </div>
           </h2>
-          <p className="text-[#1D1D1FB3] text-[22px] font-bold max-w-4xl mx-auto mb-12 ">
-            Stop juggling between Chat GPT, content tools, and CMS platforms. Connect WordPress, 
-            social media, or your favorite platforms to push content live instantly. Let our AI 
-            marketing agent handle everything from creation to publication - while you focus on strategy.
+          <p className="text-[#1D1D1FB3] text-[22px] font-bold max-w-4xl mx-auto mb-12">
+            <span className="md:hidden">
+              Stop juggling between Chat GPT, content tools, and CMS platforms. Connect WordPress, social media, or your favorite platforms to push content live instantly. Let our AI marketing agent handle everything from creation to publication - while you focus on strategy.
+            </span>
+            <span className="hidden md:block">
+              Stop juggling between Chat GPT, content tools, and CMS platforms. Connect WordPress, 
+              social media, or your favorite platforms to push content live instantly. Let our AI 
+              marketing agent handle everything from creation to publication - while you focus on strategy.
+            </span>
           </p>
 
           <div className="max-w-3xl mx-auto mb-16 relative">

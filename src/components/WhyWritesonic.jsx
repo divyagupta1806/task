@@ -71,7 +71,9 @@ const WhyWritesonic = () => {
           
           <div className="hidden md:block">
             <h2 className="text-6xl font-medium mb-8">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066FF] via-[#8C52FF] to-[#FF2E87]">Writesonic</span>?
+              Why <span className="text-transparent bg-clip-text [background-image:linear-gradient(to_right,#0066FF,#8C52FF,#FF2E87)] dark:[background-image:linear-gradient(to_right,#60A5FA,#C084FC,#F472B6)]">
+                Writesonic
+              </span>?
             </h2>
             <div className="space-y-2">
               <p className="text-xl text-[#1D1D1FB3] whitespace-nowrap">
@@ -86,7 +88,9 @@ const WhyWritesonic = () => {
           
           <div className="block md:hidden">
             <h2 className="text-4xl font-medium mb-6">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066FF] via-[#8C52FF] to-[#FF2E87]">Writesonic</span>?
+              Why <span className="text-transparent bg-clip-text [background-image:linear-gradient(to_right,#0066FF,#8C52FF,#FF2E87)] dark:[background-image:linear-gradient(to_right,#60A5FA,#C084FC,#F472B6)]">
+                Writesonic
+              </span>?
             </h2>
             <div className="space-y-4 px-4 font-bold text-2xl">
               <p className="text-2xl text-[#1D1D1FB3]  ">

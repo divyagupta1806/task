@@ -51,7 +51,7 @@ const Hero = () => {
       </section>
 
       
-      <section className="py-20 px-2 block md:hidden">
+      <section className="py-8 px-2 block md:hidden">
         <div className="max-w-6xl mx-auto">
           <h1 
             className="text-[40px] leading-tight font-bold"
