@@ -44,7 +44,7 @@ const PublishSection = () => {
   ];
 
   return (
-    <section className="py-16 px-8 bg-[#FCFCFD]">
+    <section className="py-16 px-8 bg-[#FCFCFD] dark:bg-black">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-24">
@@ -52,7 +52,7 @@ const PublishSection = () => {
             <div className="text-[32px] md:text-[46px] font-bold text-[#E96D44] leading-none mb-0">
               Publish Everywhere
             </div>
-            <div className="text-[32px] md:text-[46px] font-bold text-[#1D1D1F] leading-[1.1]">
+            <div className="text-[32px] md:text-[46px] font-bold text-[#1D1D1F] dark:text-white leading-[1.1]">
               <span className="block md:hidden whitespace-nowrap">
                 With Your AI Marketing
                 <br />
@@ -63,8 +63,8 @@ const PublishSection = () => {
               </span>
             </div>
           </h2>
-          <p className="text-[#1D1D1FB3] text-[22px] font-bold max-w-4xl mx-auto mb-12">
-            <span className="md:hidden">
+          <p className="text-[#1D1D1FB3] dark:text-gray-300 text-[22px] font-bold max-w-4xl mx-auto mb-12">
+            <span className="md:hidden dark:text-gray-300">
               Stop juggling between Chat GPT, content tools, and CMS platforms. Connect WordPress, social media, or your favorite platforms to push content live instantly. Let our AI marketing agent handle everything from creation to publication - while you focus on strategy.
             </span>
             <span className="hidden md:block">
@@ -137,22 +137,22 @@ const PublishSection = () => {
         <div className="text-center mb-24">
           <div className="flex justify-center items-center mb-4">
             <div className="relative group">
-              <FaLock className="text-4xl text-black" />
+              <FaLock className="text-4xl text-black dark:text-white" />
             </div>
           </div>
           <h2 className="mb-8">
             <div className="text-[46px] font-bold text-[#7E59FF] leading-none mb-0">
               Security First
             </div>
-            <div className="text-[46px] font-bold text-[#1D1D1F] leading-[1.1]">
+            <div className="text-[46px] dark:text-white font-bold text-[#1D1D1F] leading-[1.1]">
               An AI Agent You Can<br/>Trust
             </div>
           </h2>
-          <p className="text-[#1D1D1FB3] text-[22px] max-w-3xl mx-auto mb-12">
+          <p className="text-[#1D1D1FB3] dark:text-gray-300 text-[22px] max-w-3xl mx-auto mb-12">
             Your content is your competitive edge. That's why Writesonic uses{' '}
-            <span className="text-black">robust encryption and zero-retention policies</span> to protect your data 
+            <span className="text-black dark:text-white">robust encryption and zero-retention policies</span> to protect your data 
             and preserve complete confidentiality. Enterprise-ready security with{' '}
-            <span className="text-black">SOC 2, GDPR & HIPAA</span> compliance built-in.
+            <span className="text-black dark:text-white ">SOC 2, GDPR & HIPAA</span> compliance built-in.
           </p>
 
           <div className="flex justify-center mb-16">
@@ -171,11 +171,11 @@ const PublishSection = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {securityFeatures.map((feature) => (
-              <div key={feature.title} className="bg-white p-8 rounded-2xl shadow-md text-left">
+              <div key={feature.title} className="bg-white dark:bg-gray-600 p-8 rounded-2xl shadow-md text-left">
                 <img src={feature.icon} alt={feature.title} className="h-12 w-12 mb-4" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -183,11 +183,11 @@ const PublishSection = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {complianceCertifications.map((cert) => (
-              <div key={cert.title} className="bg-white p-8 rounded-2xl shadow-md text-left">
+              <div key={cert.title} className="bg-white dark:bg-gray-600 p-8 rounded-2xl shadow-md text-left">
                 <img src={cert.icon} alt={cert.title} className="h-12 w-12 mb-4" />
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-                  <p className="text-gray-600">{cert.description}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{cert.description}</p>
                 </div>
               </div>
             ))}

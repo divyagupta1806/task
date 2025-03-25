@@ -7,8 +7,8 @@ const Hero = () => {
       <section className="py-20 px-8 hidden md:block">
         <div className="max-w-6xl mx-auto text-center ml-[90px]">
           <h1 
-            className="text-[65px] leading-tight font-bold mb-6 leading-[65px]"
-            style={{ fontFamily: '"SF Pro Display", sans-serif', color: '#1D1D1F', margin: '0 0 20px 0' }}
+            className="text-[65px] leading-tight font-bold mb-6 leading-[65px] text-[#1D1D1F] dark:text-white"
+            style={{ fontFamily: '"SF Pro Display", sans-serif', margin: '0 0 20px 0' }}
           >
             Your 24/7 AI Team for
             <br />
@@ -26,7 +26,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-[#1D1D1FB3] text-[22px]  max-w-4xl mx-auto mb-12 leading-relaxed">
+          <p className=" text-[22px]  max-w-4xl mx-auto mb-12 leading-relaxed">
             Our AI agents integrate with Ahrefs, Semrush, Search Console & more to automate SEO 
             workflows, create content, and optimize for both Google and AI search engines like 
             ChatGPT—cutting costs by 70%+ while boosting your organic revenue.
@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="max-w-6xl mx-auto">
           <h1 
             className="text-[40px] leading-tight font-bold"
-            style={{ fontFamily: '"SF Pro Display", sans-serif', color: '#1D1D1F' }}
+            style={{ fontFamily: '"SF Pro Display", sans-serif' }}
           >
             <span className="ml-8">Your Marketing</span><br/>
             Tools Don't Talk To<br/>
@@ -75,7 +75,7 @@ const Hero = () => {
             </div>
           </h1>
 
-          <p className="text-[#1D1D1FB3] text-[16px] mx-8 mt-4 mb-8 leading-relaxed">
+          <p className=" text-[16px] mx-8 mt-4 mb-8 leading-relaxed">
             Our AI agents integrate with Ahrefs, Semrush, Search Console & more to automate SEO 
             workflows, create content, and optimize for both Google and AI search engines like 
             ChatGPT—cutting costs by 70%+ while boosting your organic revenue.

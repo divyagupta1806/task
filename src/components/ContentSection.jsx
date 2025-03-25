@@ -19,15 +19,15 @@ const ContentSection = () => {
     }
   ];
   return (
-    <section className="py-16 px-8 bg-white">
+    <section className="py-16 px-8 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          {/* Desktop view */}
+      
           <div className="hidden md:block">
             <h1 className="text-[46px] font-bold mb-6">
               <span className="text-[#6476D4]">Content Creation, Supercharged</span>
               {' '}
-              <span className="text-gray-900">With <br/>Writesonic AI</span>
+              <span className="text-gray-900 dark:text-white">With <br/>Writesonic AI</span>
             </h1>
           </div>
 
@@ -37,15 +37,15 @@ const ContentSection = () => {
               <span className="text-[#6476D4] font-bold block">
                 Content Creation,
               </span>
-              <span className="text-[#6476D4] font-bold block">
+              <span className="text-[#6476D4] dark:text-white font-bold block">
                 Supercharged With
               </span>
-              <span className="text-gray-900 font-bold block">
+              <span className="text-gray-900 dark:text-white font-bold block">
                 Writesonic AI
               </span>
             </h1>
             
-            <p className="text-[#1D1D1FB3] text-base leading-snug font-normal px-4">
+            <p className="text-[#1D1D1FB3] dark:text-gray-300 text-base leading-snug font-normal px-4">
               Our advanced AI Article Writer creates content that outperforms ChatGPT and other AI writers. 
               It combines deep web analysis, live competitor data, and strategic internal linking to create 
               ranking-ready content that Google loves. Get factually accurate, human-like articles in 
@@ -54,7 +54,7 @@ const ContentSection = () => {
           </div>
 
           
-          <p className="hidden md:block text-[#1D1D1FB3] text-[22px] font-bold max-w-4xl mx-auto mb-12">
+          <p className="hidden md:block text-[#1D1D1FB3] dark:text-gray-300 text-[22px] font-bold max-w-4xl mx-auto mb-12">
             Our advanced AI Article Writer creates content that outperforms ChatGPT and other AI writers. 
             It combines deep web analysis, live competitor data, and strategic internal linking to create 
             ranking-ready content that Google loves. Get factually accurate, human-like articles in 
@@ -88,11 +88,11 @@ const ContentSection = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4 mb-12 w-[100%] h-full ">
         {features.map((feature, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div key={index} className="bg-white dark:bg-gray-600 shadow-lg rounded-lg overflow-hidden">
             <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url(${feature.imageUrl})` }}></div>
             <div className="p-6">
               <h2 className="text-2xl font-semibold mb-2">{feature.title}</h2>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
             </div>
           </div>
         ))}

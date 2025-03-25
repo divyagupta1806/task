@@ -54,10 +54,10 @@ const Features = () => {
             <h2 className="text-xl mb-6">
               <div className="md:hidden"> 
                 <div className="text-[#6B7280]">
-                  TRUSTED BY <span className="text-black font-bold">30,000+</span>
+                  TRUSTED BY <span className="text-gray-300 font-bold">30,000+</span>
                 </div>
                 <div className="text-[#6B7280]">
-                  TEAMS AND <span className="text-black font-bold">10 M</span> MARKETERS
+                  TEAMS AND <span className="text-gray-300 font-bold">10 M</span> MARKETERS
                 </div>
               </div>
               
@@ -95,7 +95,7 @@ const Features = () => {
 
 const FeatureCard = ({ imageSrc, title, description }) => {
   return (
-    <div className="bg-[#f5f5f7] p-6 rounded-2xl hover:bg-white transition-colors duration-300 border-2 border-[#f5f5f7] hover:border-gray-200 cursor-pointer">
+    <div className="bg-[#f5f5f7] dark:bg-gray-600 p-6 rounded-2xl hover:bg-white dark:hover:bg-gray-700 transition-colors duration-300 border-2 border-[#f5f5f7] dark:border-gray-600 hover:border-gray-200 dark:hover:border-gray-500 cursor-pointer">
       <div className="mb-4">
         <img 
           src={imageSrc} 
@@ -103,8 +103,8 @@ const FeatureCard = ({ imageSrc, title, description }) => {
           className="w-12 h-12 object-contain"
         />
       </div>
-      <h3 className="text-2xl font-medium mb-3 text-gray-900">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
+      <h3 className="text-2xl font-medium mb-3 text-gray-900 dark:text-white">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{description}</p>
     </div>
   );
 };

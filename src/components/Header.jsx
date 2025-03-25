@@ -80,18 +80,18 @@ const Header = () => {
             <img 
               src="https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/671fa1c6a241f5cf851f5e15_logo.svg" 
               alt="Writesonic" 
-              className="h-8"
+              className="h-8 "
             />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
             <div ref={productsRef} className="relative group">
               <button 
-                className="flex items-center hover:text-gray-900 py-2"
+                className="flex items-center hover:text-gray-900 dark:text-gray-200 dark:hover:text-white py-2"
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
               >
                 Products
-                <IoChevronDown className={`ml-1 text-sm transition-transform duration-200 ${isProductsOpen ? 'rotate-180' : ''}`} />
+                <IoChevronDown className={`ml-1 text-sm transition-transform duration-200 dark:text-gray-200 ${isProductsOpen ? 'rotate-180' : ''}`} />
               </button>
               
               <div 
@@ -120,11 +120,11 @@ const Header = () => {
 
             <div ref={resourcesRef} className="relative group">
               <button 
-                className="flex items-center hover:text-gray-900 py-2"
+                className="flex items-center hover:text-gray-900 dark:text-gray-200 dark:hover:text-white py-2"
                 onClick={() => setIsResourcesOpen(!isResourcesOpen)}
               >
                 Resources
-                <IoChevronDown className={`ml-1 text-sm transition-transform duration-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
+                <IoChevronDown className={`ml-1 text-sm transition-transform duration-200 dark:text-gray-200 ${isResourcesOpen ? 'rotate-180' : ''}`} />
               </button>
 
               <div 
@@ -143,14 +143,14 @@ const Header = () => {
               </div>
             </div>
 
-            <button className="hover:text-gray-900">
+            <button className="hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">
               Pricing
             </button>
           </nav>
         </div>
 
         <div className="md:flex items-center space-x-4 hidden">
-          <button className="text-gray-700 hover:text-gray-900">
+          <button className="text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white">
             Request a Demo
           </button>
           <div className="h-6 border-l border-gray-300"></div>
@@ -168,7 +168,7 @@ const Header = () => {
         </div>
         
         <button 
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-700 dark:text-gray-200"
           onClick={() => setIsMobileMenuOpen(true)}
         >
           <IoMdMenu size={20} />

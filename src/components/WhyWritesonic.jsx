@@ -4,11 +4,13 @@ const WhyWritesonic = () => {
   const companies = [
     { 
       name: 'Microsoft', 
-      logo: 'https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/6720d96e134340c0d0b0d01e_6615342b7934f09a05b77cdf_Microsoft.avif' 
+      logo: 'https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/6720d96e134340c0d0b0d01e_6615342b7934f09a05b77cdf_Microsoft.avif' ,
+      
     },
     { 
       name: 'HP', 
-      logo: 'https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/675c20236d1bc0dbae8f9ae3_HP_logo_2012%201.svg' 
+      logo: 'https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/675c20236d1bc0dbae8f9ae3_HP_logo_2012%201.svg' ,
+      
     },
     {
       name: 'Paloalto',
@@ -50,7 +52,7 @@ const WhyWritesonic = () => {
               key={company.name}
               src={company.logo}
               alt={company.name}
-              className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity flex-shrink-0"
+              className="h-8 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity flex-shrink-0 dark:invert"
             />
           ))}
         </div>
@@ -62,7 +64,7 @@ const WhyWritesonic = () => {
               key={company.name}
               src={company.logo}
               alt={company.name}
-              className="h-5 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity mx-auto"
+              className="h-5 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity mx-auto dark:invert"
             />
           ))}
         </div>
@@ -71,15 +73,15 @@ const WhyWritesonic = () => {
           
           <div className="hidden md:block">
             <h2 className="text-6xl font-medium mb-8">
-              Why <span className="text-transparent bg-clip-text [background-image:linear-gradient(to_right,#0066FF,#8C52FF,#FF2E87)] dark:[background-image:linear-gradient(to_right,#60A5FA,#C084FC,#F472B6)]">
+              Why <span className="text-transparent bg-clip-text  [background-image:linear-gradient(to_right,#0066FF,#8C52FF,#FF2E87)] dark:[background-image:linear-gradient(to_right,#60A5FA,#C084FC,#F472B6)]">
                 Writesonic
               </span>?
             </h2>
             <div className="space-y-2">
-              <p className="text-xl text-[#1D1D1FB3] whitespace-nowrap">
+              <p className="text-xl text-[#1D1D1FB3] dark:text-gray-300 whitespace-nowrap">
                 Tired of switching between ChatGPT, marketing tools, and content platforms - just to create one piece of content?
               </p>
-              <p className="text-xl text-[#1D1D1FB3] whitespace-nowrap">
+              <p className="text-xl text-[#1D1D1FB3] dark:text-gray-300 whitespace-nowrap">
                 Writesonic unifies free AI Chat - Chatsonic, AI Article Writer, and marketing tools into one powerful platform.
               </p>
             </div>
@@ -93,10 +95,10 @@ const WhyWritesonic = () => {
               </span>?
             </h2>
             <div className="space-y-4 px-4 font-bold text-2xl">
-              <p className="text-2xl text-[#1D1D1FB3]  ">
+              <p className="text-2xl text-gray-600 dark:text-gray-300 ">
                 Tired of switching between ChatGPT, marketing tools, and content platforms - just to create one piece of content?
               </p>
-              <p className="text-2xl text-[#1D1D1FB3] ">
+              <p className="text-2xl text-gray-600 dark:text-gray-300 ">
                 Writesonic unifies free AI Chat - Chatsonic, AI Article Writer, and marketing tools into one powerful platform.
               </p>
             </div>
@@ -106,7 +108,7 @@ const WhyWritesonic = () => {
             <button className="bg-[#0066FF] text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors">
               Get Started - it's free →
             </button>
-            <p className="mt-3 text-sm text-gray-600">No credit card required</p>
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">No credit card required</p>
           </div>
         </div>
       </div>
