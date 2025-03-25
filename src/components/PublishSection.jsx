@@ -44,7 +44,7 @@ const PublishSection = () => {
   ];
 
   return (
-    <section className="py-16 px-8 bg-[#FCFCFD] dark:bg-black">
+    <section className=" py-4 md:py-16 px-8 bg-[#FCFCFD] dark:bg-black">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-24">
@@ -141,11 +141,12 @@ const PublishSection = () => {
             </div>
           </div>
           <h2 className="mb-8">
-            <div className="text-[46px] font-bold text-[#7E59FF] leading-none mb-0">
+            <div className=" text-[34px] md:text-[46px] font-bold text-[#7E59FF] leading-none mb-0">
               Security First
             </div>
-            <div className="text-[46px] dark:text-white font-bold text-[#1D1D1F] leading-[1.1]">
-              An AI Agent You Can<br/>Trust
+            <div className="text-[34px] md:text-[46px] font-bold text-[#1D1D1F] dark:text-white leading-[1.1]">
+              <span className="block whitespace-nowrap md:inline">An AI Agent You Can</span>
+              <span className="block md:inline">Trust</span>
             </div>
           </h2>
           <p className="text-[#1D1D1FB3] dark:text-gray-300 text-[22px] max-w-3xl mx-auto mb-12">

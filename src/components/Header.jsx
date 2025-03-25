@@ -80,7 +80,7 @@ const Header = () => {
             <img 
               src="https://cdn.prod.website-files.com/671f9e6bc06267864b5770e6/671fa1c6a241f5cf851f5e15_logo.svg" 
               alt="Writesonic" 
-              className="h-8 "
+              className="h-8"
             />
           </div>
           
